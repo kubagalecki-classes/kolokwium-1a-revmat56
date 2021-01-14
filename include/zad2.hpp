@@ -31,7 +31,4 @@ Makaron* gotujMakaron(std::string& s)
 			return ptr;
 		}
 	};
-	~Makaron()
-	{
-		delete ptr;
-	}
+	
