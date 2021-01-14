@@ -18,13 +18,19 @@ public:
 	}
 	double ileMaki(unsigned P) const
 	{
-		return P * L * W * (1.0 - R) * C;
+		return (P * Lc * Wc * (1.0 - Rc) * C);
 	}
+
+	const double Lc = L;
+	const double Wc = W;
+	const double Rc = R;
 
 private: 
 	double L;
 	double W;
 	double R;
+
+
 
 	static const double C;
 
