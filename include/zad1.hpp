@@ -6,11 +6,11 @@
 
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagiatelle {
+class Tagliatelle {
 
 public:
-	Tagiatelle(double l, double w, double r) : L(l), W(w), R(r)	{}
-	Tagiatelle()
+	Tagliatelle(double l, double w, double r) : L(l), W(w), R(r)	{}
+	Tagliatelle()
 	{
 		L = 0.5;
 		W = 0.5;
@@ -18,12 +18,10 @@ public:
 	}
 	double ileMaki(unsigned P) const
 	{
-		return (P * Lc * Wc * (1.0 - Rc) * C);
+		return (P * L * W * (1.0 - R) * C);
 	}
 
-	const double Lc = L;
-	const double Wc = W;
-	const double Rc = R;
+
 
 private: 
 	double L;
