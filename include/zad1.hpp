@@ -4,23 +4,23 @@
 // tutaj definicja klasy Makaron
 // BEZ definicji metody gotujMakaron (tylko z deklaracją)
 
-class Makaron {
-public:
-	virtual double ileMaki(unsigned) const {};
-	static Makaron* gotujMakaron(std::string& s);
-	~Makaron()
-	{
-		delete ptr;
-	}
+//class Makaron {
+//public:
+//	virtual double ileMaki(unsigned) const {};
+//	static Makaron* gotujMakaron(std::string& s);
+//	~Makaron()
+//	{
+//		delete ptr;
+//	}
 	
-private:
-	static Makaron* ptr;
-};
+//private:
+//	static Makaron* ptr;
+//};
 
 
 // Zad1
 // tutaj definicja klasy Tagliatelle
-class Tagliatelle : public Makaron {
+class Tagliatelle  {
 
 public:
 	Tagliatelle(double l, double w, double r) : L(l), W(w), R(r)	{}
