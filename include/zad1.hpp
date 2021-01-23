@@ -8,13 +8,7 @@ class Makaron {
 public:
 	virtual double ileMaki(unsigned) const {};
 	static Makaron* gotujMakaron(const std::string& s);
-	virtual ~Makaron()
-	{
-		delete ptr;
-	}
-	
-private:
-	static Makaron* ptr;
+	virtual ~Makaron() = default;
 };
 
 
