@@ -18,7 +18,7 @@ public:
 
 // tutaj definicja metody gotujMakaron
 
-Makaron* Makaron::gotujMakaron(std::string& s)
+Makaron* Makaron::gotujMakaron(const std::string& s)
 	{
 		if (s.front() == s.back())
 		{
