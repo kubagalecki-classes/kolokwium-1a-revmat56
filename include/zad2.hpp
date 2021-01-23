@@ -22,13 +22,13 @@ Makaron* Makaron::gotujMakaron(const std::string& s)
 	{
 		if (s.front() == s.back())
 		{
-			 ptr = new Tagliatelle(3.12,0.42,0.1);
-			return ptr;
+			 return new Tagliatelle(3.12,0.42,0.1);
+			
 		}
 		else
 		{
-			ptr = new Penne();
-			return ptr;
+			return new Penne();
+			
 		}
 	};
 	
